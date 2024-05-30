@@ -1,0 +1,27 @@
+package com.techlabs.test;
+
+public class StringTest {
+
+	public static void main(String[] args) {
+		
+		String str1="abc";
+		String str2="xyz";
+		
+		System.out.println(str1.hashCode());
+		System.out.println(str2.hashCode());
+		
+		call(str1,str2);
+				
+				
+				
+
+	}
+
+	private static void call(String str1, String str2) {
+		
+		System.out.println(str1.hashCode());
+		System.out.println(str2.hashCode());
+		
+	}
+
+}

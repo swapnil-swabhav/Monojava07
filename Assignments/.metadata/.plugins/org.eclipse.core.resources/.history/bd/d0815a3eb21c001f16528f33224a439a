@@ -1,0 +1,6 @@
+package com.techlabs.model;
+
+public class Students {
+
+	private List<Student> student;
+}

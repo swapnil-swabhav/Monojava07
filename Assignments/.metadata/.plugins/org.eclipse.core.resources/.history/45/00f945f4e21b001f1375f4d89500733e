@@ -1,0 +1,32 @@
+package com.techlabs.test;
+
+import java.util.Scanner;
+
+public class Factorial {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner=new Scanner(System.in);
+		int number=scanner.nextInt();
+		
+		int factorial=calculateFactorial(number);
+		
+		System.out.println(factorial);
+
+	}
+
+	private static int calculateFactorial(int number) {
+		
+	   if(number<0)
+	   {
+		   System.out.println("Wrong input");
+		   return 0;
+	   }
+	   else
+	   {
+		   if(number==0)
+			   return 1;
+	   }
+	}
+
+}

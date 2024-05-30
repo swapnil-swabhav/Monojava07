@@ -1,0 +1,875 @@
+Java is a programming language.
+
+a. What do you mean by programming language?
+
+ Instructions-> Program -> Software  -> Software suit
+
+  c++, python, javascript, c#, kotlin, ruby, swift, R, ?
+ 
+   JAVA
+
+JAVA -> Java is an high level object oriented programming language.
+
+What are types of softwares?
+
+1. System Softwares -  run your systems/computer  e.g. Operating systems, drivers . deals with hardware  - low level languages ex. C, c++
+2. Application Softwares  - run on your system..  ex. browsers, office,  -> high level languages -> java, c#, python,
+
+
+History of java ->  
+
+Sun Microsystems -> 
+1991 -> Embedded devices -> televisions, set top boxes
+
+Green Team -> 1. James Gossling   2. Mike Sheridon   3. Patrick Noughton
+
+OAK -> 
+
+JAVA -> 1995 -> internet applications
+
+JAVA -> Just Another Virtual Accelator
+
+C++ -  object oriented programming language
+
+1. Why java?
+
+Features of JAVA (Buzzwords) ->  
+
+
+1. Simple  -> c / c++ 
+                c    ->  Dennis Ritchie
+           ->  c++   ->  Bjarne Strusstrup
+
+            
+2. Object Oriented Programmimg language .
+    Simula67 ->  First Object Oriented Programming Language
+
+   Purely OOP-> Nothing in java that is not an object  / Everything in java is an object
+
+3. Robust  ->   it does not allow you to make mistakes
+                a. Memory management
+                b. Exception handling
+                c. Strongly typed language
+
+4. Secure -> java programs run under its own environment  (JRE)
+
+             JDK - Java Development Kit  - to develop and run apllications -> jdk 1.8
+             JVM - Java Virtual Machine -> execute the application
+             JRE - Java Runtime Environment -   to run applications
+
+5. Architecture Neutral -> write  once, run anywhere, anytime, forever
+                            JVM -> 
+                             bytecode  ->  
+
+6. Platform independant 
+
+7. Distributed ->  RMI -> Remote Method Invocation
+
+8. Compiled and interpreted  ->   source code -> object code
+                                  1. javac -  source code ->  bytecode 
+                                  2. java -  bytecode -> execuatable code
+
+               bytecode -> a highly optimized set of instructions which is platform independant to be run by jvm
+
+                    a.java  ->  compiler(javac)  -> a.class  -> interpreter(java)   ->  a.exe
+
+9. Multithreaded  ->   
+
+10. Dynamic -> 
+
+           
+
+
+Workspace - our own directory where we will store our work
+
+
+class HelloWorld
+{
+   public static void main(String args[])
+   {
+       System.out.println("Hello!!! Welcome to Java");   
+   }
+}    
+
+
+main()
+
+- main() is only compulsory method in java
+- Program execution always starts with main
+- Progam ends at main
+
+
+System.out  ->  output stream which represents a standard o/p device
+
+
+
+Java Tokens ->   smallest individual parts of a program
+
+1. datatypes ->   type of data that a variable can hold
+
+                  Numbers  ->   
+                     1. Integers (numbers without fraction point)
+                             a. byte    -   1 byte     -    
+                             b. short   -   2 bytes
+                             c. int     -   4 bytes
+                             d. long    -   8 bytes
+
+                         0000 0000     -         1   1  1  1 1 1 1 1
+                                                128 64 32 16 8 4 2 1
+
+
+                     2. Floating  (numbers with fraction point)
+                             a. float   - 4 bytes
+                             b. double  - 8 bytes
+ 
+                 Boolean -> true/false
+                          a. boolean
+
+                Characters  ->   unicode characters
+                          a. char   -  2 bytes
+
+1. Java is strongly typed language  ->
+   - Evry type in java is strictly defined
+   - every expression in java has a type
+
+              int a= 10+10.5;
+2. varible -> 
+
+        1. First declare a variable then use it
+        2. you can declare a variable anywhere
+                    
+                    byte a=129; // not possible
+
+3. Identifiers ->  names given to programming elements(variable, constant, method, class, interface) by user
+
+    Rules for identifiers ->
+      1. you can use alphabets(a to z, A to Z), numbers, _
+      2. you should not start with a number
+      3. you can not use any other special character other than _
+      4. you can not use keywords as identifiers
+      5. java is case sensitive language
+
+
+     ex->   abc   -  valid
+            abc123  -  valid
+            abc 123 -  invalid
+            a_1   -  valid
+            1_a  - invalid
+            public  -  invalid
+            Public  -   valid  
+            ABCXYZ  -  valid
+           
+              void getStudents()
+              {
+              }
+                  
+4. Keywords -> names given by a language 
+
+Swapping values of two numbers ->  using third variable and without using third variable
+
+
+Read ->   Class Diagrams   ->
+
+           System
+
+
+
+How to read input from user?
+
+1. Command Line Arguments ->    these are arguments which are passed to main() at the time of running a program
+
+                                  public static void main(String args[])   args=[10,20]
+                                  {
+                                     System.out.println(args[1]);
+                                  }
+                                they are received in args[] 
+
+                                javac Addition.java
+                                java Addition 
+                                java Addition 10 20
+2. Standard objects ->   BufferedReader   Scanner 
+
+                 System.in   -> standard input device  -  keyboard
+
+
+Control Structures ->    if , if -else, while, do-while, for, switch
+
+  1. Selection statements  -> if, if-else, switch
+  2. iterative Statements -> while, do-while, for
+
+  1. if & if-else
+
+          if(condition)
+          {
+          }
+          else
+          {
+          }
+
+  1. program to check for even or odd 
+  2. program to find maximum of two numbers
+  3. program to find maximum of three numbers
+
+
+
+
+2. While  -> iterative statement
+
+
+
+while(condition)
+{
+
+
+}
+
+
+1. print my name 10 times on screen
+2. print 1 to 100 numbers on screen
+3. print only even numbers between 1 to 100 on screen
+4. calculate factorial of a number
+5. print table of a number on screen
+
+1	2	3	4					10
+2	4	6	8
+3	6	9	12
+4	8	12	15
+5
+6
+7
+8
+9
+10	20	30	40					10
+
+
+int i=1;
+while(i<=10)
+{
+    int j=1;
+    while(j<=10)
+    {
+       System.out.print((i*j)+"\t");
+       j++;
+    }
+   i++;
+System.out.println("");
+}
+
+
+-> POC  (Proof of Concepts)  ->  Operators in java
+
+Arithmetic    Relational     Logical     Bitwise   Assignment  others
+                               &  &&	 &
+			       |  ||	 |
+
+		boolean	    boolean      numbers   
+
+   2 | 3
+   true |  false
+   true || false
+
+   &&   ||   -> short circuit operators
+
+
+				||		&&
+    true  	true		true		true
+	
+    true	false		true		false
+
+    false	true		true		false
+
+    false	false		false		false
+
+
+   (condition1)   ||  (condition2)    =>   true
+
+
+   int number=27;
+   System.out.println(number>>2)   
+
+
+
+
+1. To check for prime number
+2. Reverse a number
+3. to check for palindrome number
+4. to calculate sum of digits of a number
+5. to check for armstrong number
+6. to check for perfect number   ->   6      ->  1 2 3  ->  1 +2 +3  =>   6
+
+
+
+=> switch ->   switch(expression)
+               {
+                   case value1: 
+                  
+                   case value2: 
+
+                   case value3:   System.out.println("Valid for 1 2 3");
+                                  break;
+
+                   case value4:  System.out.println("Valid for 4 only");
+                  
+                    case value5:  System.out.println("Valid for 5 only");
+
+                   default:
+                   
+               }
+
+
+       
+1. Read a month number and print which season this month belongs  -
+
+            12  ->  Winter
+             1  -> Winter
+             5   -> Summer
+          20  ->  please enter valid month number
+
+
+2. Read a day number of a week and print that day
+
+            1  ->  its Sunday
+            2  ->  its Monday
+
+            7 -> its Saturday
+
+            10  -> please enter valid day number
+
+
+
+----> Debugging   ->    finding and fixing bugs   .     To understand flow of execution of code
+
+int i=1;
+while(i<10)
+{
+   System.out.println(i);
+   i++;
+}
+
+--> for  ->
+
+
+   for(; condition;incer/decr)
+   {
+   }
+
+
+->  1. Print all prime numbers between 1 to 50
+
+
+2
+3	5
+7	11	13
+17	19	23	29
+31	37	39	41	47
+
+
+->   Java is robust   ->    1. Strong memory management techniques
+                            2. Strong exception handling mechanism
+                            3. Java is strongly typed language
+                                - every variable/expression has a datatype
+                                - all types are strictly defined
+
+                 1. Java allows automatic type conversion  ->   Implicit typecasting
+
+                            a. Types of both variables or values must be compatible with each other
+                                   all number datatypes are compatible with each other
+                                       (byte,short, int, long, float, double)
+                            b. destination type must be larger than source type
+
+             2. explicit type casting -> 
+                             Types of both variables or values must be compatible with each other
+                                   all number datatypes are compatible with each other
+                                       (byte,short, int, long, float, double)
+
+
+ 
+ -->>>   Java is purely object oriented programming language
+
+                - everything in java is an object
+
+
+ Wrapper classes  ->  To represent normal built in type values as an object  ->  Wrapper classes
+
+                       byte   -  Byte
+                       short  -  Short
+                       int    -  Integer
+                       long   -  Long
+                       float  -  Float
+                       double -  Double
+                       char   -  Character
+                       boolean - Boolean
+
+    Autoboxing  ->  representing a normal data type value as an object
+
+
+
+--->  Arrays  ->    collection of similar datatype values  ->    consistancy
+                    fix number of values
+                    requires contigous memory block
+ 
+      array     12 23 45 56 67 
+
+              index ->   0   
+
+        1. declare an array
+        2. allocate memory to array
+
+           int array[5];
+           cout<<array[0];
+            
+           int array[];
+           array=new int[10];
+
+           int array[]=new int[10];       [0,0,0,0,0,0,0,0,0,0]
+           sysout(array[0]);  // 0
+           array[0]=10;                    [10,0,0,0,0,0,0,0,0,0]
+           array[9]=20;                    [10,0,0,0,0,0,0,0,0,20]
+
+
+
+
+1.  Read an array of n integers and calculate sum of all elements of an array. Accept values of array from user
+1.  Read an array of n integers and find maximum of an array. Accept values of array from user.
+
+
+
+
+
+[1,2,3,4,5]  =>  [1,4,9,16,25]
+[-5,-4,-3,-2,-1]  =>  [1,4,9,16,25]
+[-5,-3,1,2,4]  => [1,4,9,16,25]
+
+
+-----------> String in java  ->
+
+
+   1. String  ->  immutable   -> can not change contents
+   2. StringBuffer  -> mutable  ->  can be modified   -> Thread safe
+   3. StringBuilder  ->  mutable  ->  can be modified   -> not thread safe
+
+String pool / String constant pool   ->   
+
+
+
+String s1="hello"+
+
+
+------------------> Stream -> a sequence of bytes which is attached to i/p or o/p devices 
+
+
+1.InputStream
+2.OutputStream
+3.Reader
+4.Writer
+
+
+1. FileInputStream / FileOutputStream  ->
+
+
+=> java code to calculate number of characters, words and lines in a file
+
+
+Simula67 -> 
+
+Object Oriented JAVA  ->   
+
+1. Object ->  It is real world entity having some attributes and some behaviour.
+              Physical entity  -> memory is allocated to it.
+              instance of class
+
+              ex. bajajFan  ->  1080rph, 1kg, 3, green, c123, bajaj, 5000, 4500rs
+                       ->  
+                  Laptop  ->  price, brand, processor, memory, camera, typeofbody, size, typeofscreen
+                          -> playMusic(), watchMovies(), playGames(), coding(), storeData(), processData(), editing() 
+
+2. Class -> It is blueprint for its objects.
+            Logical entity  ->
+            Fan  -> speed, weight, no_of_plates, color, model, brand, capacity, price   
+                  rotating(), music()
+            collection of objects
+
+3. Data Abstraction  ->  Hiding implementation details. Representing only essential things without including background details
+
+4. Encapsulation ->  Binding of data and methods together into a single unit  -> hide the data from outside world
+
+5. Inheritance ->  reuse the code   ->  deriving properties of one object into another
+
+6. Polymorphism  ->   ability to take more than one form.
+                     1. compile time  ->  function overloading
+                     2, run time -> function overrriding
+
+
+  class classname
+  {
+  }
+
+   class Student
+   {
+        int rollnumber;
+        String name;
+        int age;
+   }
+
+
+
+->  classname objectname=new classsanme();
+
+    
+Access Sepcifiers -->
+
+1. private  - these will be accessed only within the class
+2. public  - these members can be accessed within the class and outside the class
+3. protected  - inheritance 
+4. default  - these members can be accessed within the class and outside the class but withn the same package only
+
+
+
+
+
+
+
+Employee(id, name, salary)
+
+Create a class Account(accountnumber, accountype, name, balance). Write methods to initialize and display details of 2 accounts.
+
+
+
+
+Create a class Rectangle(width,height). Write methods to initialize and display a rectangle. also write a method to calculate area of rectangle.
+
+
+
+
+
+main()
+{
+   int width=10;
+   int height=20;
+   Recatngle rectangle=new Rectangle(width,height);
+   rectangle.calculate();
+ Recatngle rectangle2=new Rectangle(width,height);
+}
+
+
+
+
+
+
+Stack and Heap Memory  -> 
+
+
+Stack Memory->
+1. Temporrary Memory allocation
+2. local variables, methods, references
+
+Heap Memory ->
+1. Permanaent 
+2. Objects are allocated memory inside it
+
+
+
+
+Getters and Setters  -> 
+
+
+
+Constants in java  ->  
+
+final int var1;
+
+var1=20;  // error
+
+
+int var;  // declaration
+var=10;  // initialization
+
+
+Student student=new Student();   /// creating an object
+
+student.setRollNumber(10);      // initialization
+student.setName("abc");
+student.setAge(25);
+
+int var=10;  
+
+
+Constructor ->  a special member method of a class
+               -> it has same name as that of class
+               -> it does not have any return type
+               -> it initializes object at the time its creation
+               -> it gets invoked automatically when object of a class is created
+
+-> declare constrcuctors as public
+
+
+class Point
+{
+    private int x;
+    private int y;
+  
+   Point()
+   {
+     x=0;
+     y=0;
+   }
+
+   void display()
+   {
+      System.out.println("("+x + ","+y+")");
+   }
+
+} 
+
+
+
+Point point=new Point();
+point.display();
+
+--> we can have more than one constructors for a single class   ->  constructor overloading
+
+Types of constructor  -> 
+1. Default Contructor  - which does not have any parameters/arguments.
+                         if we do not include/write any constructor inside a class then java provides us the one which is a default constructor
+2. Parameterized Constructor - which have some parameters/arguments
+
+
+
+it is good practice to write default constructor when you have a parameterized constructor
+
+
+
+this  ->  it always refers to an object which has currently called a method
+
+
+
+Constructor chaining  -> calling one constructor of a class from within another constructor.
+
+x+yi 
+
+5+3i
++
+6+4i
+
+11+7i
+
+1. Create a class Complex(real, imaginary). Add default and parameterized constructor. Add getters and setters.
+                        create a method for addition of two complex numbers
+
+
+Integer a=10;
+
+
+int b=20;
+
+Integer c=b;
+
+
+
+Gargabe Collection ->  the object which do not have any reference, java removes such objects automatically, 
+                       removing unused objects
+                       reclaimin the memory.
+
+           finalization ->   protected void finalize()
+                             {
+                                   // closing activites
+                             }
+
+
+
+System.gc()
+
+1. constructor chaining
+2. pass by reference
+3. garabage collection
+
+
+
+Enums  ->   
+
+Array of objects  -> 
+
+int array[]=new int[10];
+
+
+Student students[]=new Student[30];  // memory for an array of students
+
+student[0]=new Student(1,"abc","swap.kul29@gmail.com");
+student[1]=new Student(2,"xyz","xyz@gmail.com");
+
+
+	    s1	       s2		s3		null	
+students    0		1		2		3		4		5		29
+
+
+
+Student(rolnumber, name, age, emailid). constructors, getters, setters.   create an array of n students and print it.
+
+
+
+
+
+Object Calisthenics  --->   we should write clean code
+
+
+
+
+DRY  ->   Do Not Repeat Yourself
+
+
+
+JAR  ->>>>    Java Archieve File which encompasses all java code file,and metadata files images, audio,animations, assets
+
+            -> manifest file -> it contains metadata of your jar
+
+jar cf jarfilename inputfiles.
+
+
+Git & Github  ->   
+
+ Version Control systems  -> to keep track of code changes, who has made changes, coding collaberarions.
+                            
+                    v1    ->   v2  ->   v3   ->  v4
+
+  ->  bitbucket,  hlix core, mercurial , cvs, git
+
+
+
+local repository / remote repository
+
+1.  git --version
+2.  git config --global user.name "swapnil"
+3. git config --global user.email "swapnilkulkarni498@gmail.com"
+4. git config user.name
+5. git config user.email
+6. git init
+7. git add "name.txt"  /    git add --all  /   git add -A  / git add .
+8. git rm --cached "name.txt"
+9. git commit -m "message"
+10. git reset  
+
+12. git log
+13. git reflog
+14. git branch
+15. git branch "branchname"
+16. git checkout branchname
+17 git switch branchname
+18 git merge branchname
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

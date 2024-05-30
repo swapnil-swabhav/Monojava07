@@ -1,0 +1,27 @@
+package com.techlabs.test;
+
+public class Test4 {
+
+	public static void main(String[] args) {
+		
+		String username="swap.kul20";
+		String password="123456";
+		
+		
+		
+	}
+	
+	private static String login(String username, String password)
+	{
+		if(username=="swaps.kul20" && password=="123456")
+			return "Login Successfull";
+		
+		return "Login Failed";
+	}
+	
+	private static boolean checkLogin(String username, String password)
+	{
+		if
+	}
+
+}
